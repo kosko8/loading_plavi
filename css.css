@@ -1,0 +1,86 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #262626;
+}
+.loader {
+  color: #fff;
+  font-family: "Josefin Sans", Menlo, Monaco, monospace;
+  /*font-weight: bold;*/
+  font-size: 12vh;
+  opacity: 0.8;
+}
+.loader .zagrada {
+  display: inline-block;
+  -webkit-animation: pulse 0.5s alternate infinite ease-in-out;
+          animation: pulse 0.5s alternate infinite ease-in-out;
+}
+.loader .zagrada:nth-child(odd) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+@-webkit-keyframes pulse {
+  to {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0.5;
+
+  }
+}
+@keyframes pulse {
+  to {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0.5;
+
+  }
+}
+
+}
+svg {
+
+  padding:0;
+  margin:0;
+  transform-origin :center;
+  position: absolute;
+  top:-50px;
+  left:-0.1em;
+  height: 100%;
+  width: 100%;
+
+}
+span{
+  padding: 0;
+  margin: 0 -0.15em 0 -0.15em;
+}
+.loader .zagrada{
+
+          -webkit-animation: pulse 0.5s alternate infinite ease-in-out;
+                  animation: pulse 0.5s alternate infinite ease-in-out;
+}
+.zagrada{
+  font-size:12vh;
+  color: hsl(190, 80%, 80%);
+
+}
+img{
+  position: relative;
+  display: inline-block;
+    width: 40%;
+    height: auto;
+}
